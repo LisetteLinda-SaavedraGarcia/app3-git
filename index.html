@@ -1,0 +1,336 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobie.icons-1.4.5.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobie.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/combatir2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>La contaminación</h1>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Definición</h2>
+<p> La contaminacion es bastante facil de definir.Basicamente es...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de contaminación</h2>
+<p> Diferentes tipos de contaminación están clasificados por su parte que ... </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consecuencias</h2>
+<p> La contaminación ambiental deteriora cada vez mas a nuestro planeta y ...</p>
+  </a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Reciclaje</h2>
+<p> La regla de las &quot;Las 4R&quot; Reducir, Reciclar, Reutilizar y Remplazar...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas para convatir</h2>
+<p> ¿Qué puedo hacer? </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminacion en mi entorno</h2>
+<p>Yo propongo que... </p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed"> 
+<div>
+<img src="imagenes/plant.png" width="46" height="46">
+</div>
+<div>
+<h4> Aplicacion Uno </h4>
+<h4> Lisette Linda Saavedra Garcia </h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>DEFINICION</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>La <a href="http://contaminacion-ambiente.blogspot.mx/" target="_self">contaminación</a> es bastante fácil de definir. Básicamente, es la introducción de un agente contaminante dentro de un medio natural, causando inestabilidad, desorden y también daños en el ecosistema.</p>
+  <p>El tipo de contaminante puede variar, incluyendo una sustancia química, energía, sonido, calor o luz. Generalmente el origen de la contaminación está en la mano del hombre.</p>
+  <p>Para poder detectar la contaminación, el contaminante debe ser suficiente como para provocar el desequilibrio del ecosistema o cualquiera de los efectos negativos ya mencionados.</p>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Esta podria ser tu ciudad</p>
+<br>
+</div>
+<div>
+ <img src="imagenes/cambiar.jpg" width="30%" height="28%"> 
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4> Aplicacion Tres SGLL </h4>
+</div>
+</div>
+ 
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>TIPOS DE CONTAMINACION</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son: </p>
+  <p>&nbsp;</p>
+   <ul>
+    <li><em>Contaminación del Agua</em></li>
+    </ul>
+  <p>  <img src="imagenes/eso.jpg" width="30%" height="28%"> 
+</p>
+  <ul>
+    <li><em>Contaminación del Aire</em></li>
+    </ul>
+  <p><img src="imagenes/contaminacion.jpg" width="30%" height="28%"> </p>
+  <ul>
+    <li><em>Contaminación del Suelo</em></li>
+    </ul>
+  <p><img src="imagenes/podria.jpg" width="30%" height="28%"></p>
+  <ul>
+    <li><em>Contaminación Térmica</em></li>
+    </ul>
+  <p><img src="imagenes/termica.jpg" width="30%" height="28%"></p>
+  <ul>
+    <li><em>La Contaminación radiactiva</em></li>
+    </ul>
+  <p><img src="imagenes/nuclear.jpg" width="30%" height="28%"></p>
+  <ul>
+    <li><em>Contaminación Acústica</em></li>
+    </ul>
+  <p><img src="imagenes/acustica.jpg" width="30%" height="28%"></p>
+  <ul>
+    <li><em>Contaminación Lumínica</em></li>
+    </ul>
+  <p><img src="imagenes/ES.png" width="30%" height="28%"></p>
+</div>
+ </div>
+<div data-role="footer" data-therme="b" data-position="fixed">
+<h4>Aplicacion Tres SGLL </h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CONSECUENCIAS</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p><em>La contaminación ambiental deteriora cada vez mas a nuestro planeta y a nosotros mismos pues según investigaciones al respirar el aire contaminado esto afecta nuestra </em><em>salud cardiovascular</em><br>
+    <em>por lo que normas estrictas de aire limpio contribuirían a una mejor salud con efectos en gran escala. </em></p>
+  <p><em>Otra consecuencia es</em> <em>el debilitamiento de la capa de ozono, que protege a los seres vivos de la radiación ultravioleta del Sol, debido a la destrucción del ozono estratosférico y esto provoca el calentamiento global.La contaminacion al medio a</em><em>tenta contra la vida de plantas, animales y personas, g</em><em>enera daños físicos en los individuos, </em><em>convierte en un elemento no consumible al agua</em>
+ <em>y hace que en los suelos contaminados no sea posible la siembra. Esto afecta  a demás el clima y las actividades realizadas por el ser humano dañandolo y perjudicándole.</em>  
+  <p>
+  <left>
+  <img src="imagenes/en.jpg" width="30%" height="28%">
+  </left>
+   <center>
+  <img src="imagenes/causa.jpg" width="30%" height="28%">
+  </center>
+   <left>
+  <img src="imagenes/desar.png" width="30%" height="28%">
+  </left>
+  
+</div>
+ </div>
+<div data-role="footer" data-therme="b" data-position="fixed">
+<h4>Aplicacion Tres SGLL </h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>RECICLAJE</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <h3><span id="La_regla_de_las_4R_reducir_reutilizar_reemplazar_reciclar">LA REGLA DE &ldquo;LAS 4R&rdquo;: REDUCIR, REUTILIZAR, REEMPLAZAR, RECICLAR</span></h3>
+  <h4></h4>
+  <p><strong>Reducir</strong></p>
+  <ul>
+    <li>Evitar el sobre envasado. Elegir siempre productos con la menor cantidad de embalajes innecesarios y los que utilicen materiales reciclados.</li>
+    <li>Reducir los productos de &ldquo;usar y tirar&rdquo;, como el papel aluminio, las bandejas de plástico, los envases tetrabrik….</li>
+    <li>Reducir la utilización de bolsas de plástico en las compras; llevar siempre una de tela o un carrito de compra.</li>
+    <li>Impulsar los procesos de producción limpia. Por ejemplo: reutilizando el papel de regalo.</li>
+    <li>Reducir el uso de plástico en envases, embalajes, juguetes, etc.</li>
+    </ul>
+  <p> <img src="imagenes/reducir.jpg" width="30%" height="28%"> </p>
+  <p><strong>Reutilizar</strong></p>
+  <ul>
+    <li>Utilizar envases de vidrio, es 100% reciclable sin perder su calidad. Además, no se necesitan químicos para su elaboración.</li>
+    <li>Al usar el papel para escribir o imprimir, aprovechar las dos caras. También es posible fabricar pequeños blocks de notas con papel sobrante.</li>
+    <li>Utilizar filtros de café no descartables que pueden ser lavados y reutilizados.</li>
+    </ul>
+  <p> <img src="imagenes/reutilizar.jpg" width="30%" height="28%"> </p>
+  <p><strong>Reemplazar</strong></p>
+  <ul>
+    <li>Comprar envases de vidrio en vez de plástico o latas.</li>
+    <li>Elegir otras alternativas a juguetes que funcionan con pilas o que están hechos de plástico.</li>
+    <li>Utilizar pañuelos de tela en vez de pañuelos de papel.</li>
+    <li>Elegir cuadernos con tapas de cartón, en vez de plástico.</li>
+    </ul>
+  <p> <img src="imagenes/remplazar.jpg" width="30%" height="28%"> </p>
+  <p><strong>Reciclar</strong></p>
+  <ul>
+    <li>El reciclado de los materiales es el último paso antes del pretratamiento y la eliminación de los residuos. Reciclar significa utilizar un residuo para obtener un producto similar al originario.</li>
+    <li>El reciclado permite reintroducir los distintos materiales en los ciclos de la producción, ahorrando materias primas y disminuyendo el flujo de residuos que van a parar a los tratamientos de disposición final.</li>
+    <li>Para residuos de carácter orgánico: pueden ser &ldquo;compostados&rdquo; para ser usados como abono de uso domiciliario o rural.</li>
+    <li>Los cartones, el papel, los vidrios, los metales, pueden ser de utilidad para algunas empresas o cooperativas que los reciclan.</li>
+    </ul>
+  <p> <img src="imagenes/recicla.jpg" width="30%" height="28%"> </p>
+  <h2>&nbsp;</h2>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres SGLL </h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>MEDIDAS PARA CONVATIR</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<ul>
+  <li>Crear conciencia ciudadana.</li>
+  <li>No quemar ni talar plantas.</li>
+  <li>Colocar la basura en los lugares apropiados.</li>
+  <li>Regular el servicio de aseo urbano.</li>
+  <li>Controlar el uso de fertilizantes  y pesticidas.</li>
+  <li>Crear vías de desagüe para las industrias que no lleguen a los mares o ríos utilizados para el servicio o consumo del ser humano o de los animales.</li>
+  <li>Controlar los derrames accidentales de petróleo.</li>
+  <li>Controlar los relaves mineros.</li>
+  <li>Reciclar objetos (darles un nuevo uso).</li>
+  <li>Tomar y generar conciencia de lo que está sucediendo.</li>
+  <li>Realizar campañas de apoyo.</li>
+  <li>Evitar el uso de aerosol.</li>
+  <li>Tener sentido de responsabilidad.</li>
+  </ul>
+<p>
+
+</p>
+<center>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/combatir2.jpg',1)"><img src="imagenes/combatir.jpg" alt="combatir" width="256" height="166" id="Image16"></a>
+</p>
+</center>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres SGLL </h4>
+</div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CONTAMINACION EN MI ENTORNO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/c.aire.jpg" alt="c.aire" title="c.aire" id="wows1_0"/></li>
+		<li><img src="data1/images/c.aire1.jpg" alt="c.aire1" title="c.aire1" id="wows1_1"/></li>
+		<li><img src="data1/images/c.aire2.jpg" alt="c.aire2" title="c.aire2" id="wows1_2"/></li>
+		<li><img src="data1/images/c.aire3.jpg" alt="c.aire3" title="c.aire3" id="wows1_3"/></li>
+		<li><img src="data1/images/c.aire4.jpg" alt="c.aire4" title="c.aire4" id="wows1_4"/></li>
+		<li><img src="data1/images/c.aire5.jpg" alt="c.aire5" title="c.aire5" id="wows1_5"/></li>
+		<li><img src="data1/images/c.aire6.jpg" alt="c.aire6" title="c.aire6" id="wows1_6"/></li>
+		<li><img src="data1/images/c.aire7.jpg" alt="c.aire7" title="c.aire7" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/c.aire8.jpg" alt="bootstrap slider" title="c.aire8" id="wows1_8"/></a></li>
+		<li><img src="data1/images/c.aire9.jpg" alt="c.aire9" title="c.aire9" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="c.aire"><span><img src="data1/tooltips/c.aire.jpg" alt="c.aire"/>1</span></a>
+		<a href="#" title="c.aire1"><span><img src="data1/tooltips/c.aire1.jpg" alt="c.aire1"/>2</span></a>
+		<a href="#" title="c.aire2"><span><img src="data1/tooltips/c.aire2.jpg" alt="c.aire2"/>3</span></a>
+		<a href="#" title="c.aire3"><span><img src="data1/tooltips/c.aire3.jpg" alt="c.aire3"/>4</span></a>
+		<a href="#" title="c.aire4"><span><img src="data1/tooltips/c.aire4.jpg" alt="c.aire4"/>5</span></a>
+		<a href="#" title="c.aire5"><span><img src="data1/tooltips/c.aire5.jpg" alt="c.aire5"/>6</span></a>
+		<a href="#" title="c.aire6"><span><img src="data1/tooltips/c.aire6.jpg" alt="c.aire6"/>7</span></a>
+		<a href="#" title="c.aire7"><span><img src="data1/tooltips/c.aire7.jpg" alt="c.aire7"/>8</span></a>
+		<a href="#" title="c.aire8"><span><img src="data1/tooltips/c.aire8.jpg" alt="c.aire8"/>9</span></a>
+		<a href="#" title="c.aire9"><span><img src="data1/tooltips/c.aire9.jpg" alt="c.aire9"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ Esta vez con mi mamá caminando por un lugar para venir a la escuela lo consideramos un atajo esa vez ví como un señor estaba quemando muchas llantas lamentablement no le dije nada por que el señor se veia malvado.Ademas tenia perros quien sabe si los soltaba y nos mordian :( 
+ <p>-Que utilicemos menos el coche y en dado caso tomar el transporte público</p>
+ <p>-Que a cierta hora se apaguen las luces en todo el municipio.(preferentemente en la tarde o noche)</p> </div>
+ </div>
+<div data-role="footer" data-therme="b" data-position="fixed">
+<h4>Aplicacion Tres SGLL </h4>
+</div>
+</div>
+
+
+</body>
+</html>
